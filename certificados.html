@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Johnmuller Mesquita | Portfólio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+<img src="foto.png" class="profile-pic">
+
+<h2>Johnmuller Mesquita</h2>
+<div class="subtitle">Técnico em Desenvolvimento de Sistemas</div>
+<div class="age">18 anos • Em desenvolvimento profissional</div>
+
+<div class="section-title">Resumo</div>
+<p class="mini-bio">
+Foco em suporte técnico, infraestrutura e organização de sistemas.
+Perfil analítico, disciplinado e orientado à solução de problemas.
+</p>
+
+<div class="tags">
+<span>Infraestrutura</span>
+<span>Redes</span>
+<span>Windows</span>
+<span>Linux</span>
+<span>HTML/CSS</span>
+<span>Automação</span>
+<span>Java</span>
+<span>Python</span>
+<span>JavaScript</span>
+<span>Flutter</span>
+<span>C++</span>
+<span>Figma</span>
+<span>Android Studio</span>
+</div>
+
+<div class="section-title">Contato</div>
+
+<div class="contact-item">
+
+<button class="contact-btn" onclick="showEmail()">
+<span>📧</span>
+<span>Email</span>
+</button>
+
+<div id="emailBox" class="email-box">
+<span id="emailText">johnmullermesqui77@gmail.com</span>
+<button onclick="copyEmail(event)" class="copy-btn">Copiar</button>
+</div>
+
+<a href="https://wa.me/5585992960699" target="_blank" class="contact-btn">
+<span>💬</span>
+<span>WhatsApp</span>
+</a>
+
+</div>
+
+<div class="quick-links">
+<a href="https://github.com/john00833" target="_blank">GitHub</a>
+<a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+</div>
+
+<div class="section-title">Portfólio</div>
+
+<div class="qr-box">
+<img src="qr.png" class="qr-visible" onclick="expandQR()">
+<p>Escaneie para acessar meus projetos</p>
+</div>
+
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<!-- OBJETIVO -->
+<div class="card objective-card">
+<h3>Objetivo Profissional</h3>
+
+<div class="objective-block">
+<span class="objective-icon">🎯</span>
+<div>
+<h4>Construção de Carreira em Tecnologia</h4>
+<p>
+Consolidar minha trajetória na área de Tecnologia da Informação,
+com foco em infraestrutura, suporte técnico e desenvolvimento de soluções eficientes.
+</p>
+</div>
+</div>
+
+<div class="objective-block">
+<span class="objective-icon">⚙️</span>
+<div>
+<h4>Impacto Real</h4>
+<p>
+Mais do que executar tarefas, busco entender sistemas,
+identificar melhorias e contribuir ativamente para ambientes mais organizados,
+seguros e produtivos.
+</p>
+</div>
+</div>
+
+<div class="objective-block">
+<span class="objective-icon">📚</span>
+<div>
+<h4>Desenvolvimento Contínuo</h4>
+<p>
+Invisto constantemente no aprimoramento técnico e pessoal,
+expandindo conhecimentos em redes, desenvolvimento e sistemas operacionais.
+</p>
+</div>
+</div>
+
+<div class="objective-block highlight-block">
+<span class="objective-icon">🚀</span>
+<div>
+<h4>Compromisso</h4>
+<p>
+Crescer de forma consistente, entregar resultados reais
+e construir uma carreira sólida baseada em disciplina,
+responsabilidade e evolução contínua.
+</p>
+</div>
+</div>
+
+</div>
+
+<!-- EXPERIÊNCIA -->
+<div class="card">
+<h3>Experiência Técnica</h3>
+
+<div class="exp-block">
+<h4>Suporte Técnico e Infraestrutura</h4>
+<p>Instalação, configuração e manutenção de computadores e notebooks.</p>
+<p>Formatação, backup, instalação de Windows e Linux.</p>
+<p class="highlight">Diagnóstico e resolução rápida de problemas técnicos.</p>
+</div>
+
+<div class="exp-block">
+<h4>Redes Locais e Conectividade</h4>
+<p>Configuração de redes LAN, definição de IP e cabeamento estruturado.</p>
+<p class="highlight">Instalação de roteadores, switches e impressoras em rede.</p>
+</div>
+
+<div class="exp-block">
+<h4>Administração de Sistemas</h4>
+<p>Gerenciamento básico de usuários e permissões.</p>
+<p class="highlight">Aplicação de boas práticas para estabilidade e segurança.</p>
+</div>
+
+<div class="exp-block">
+<h4>Automação e Desenvolvimento</h4>
+<p>Criação de planilhas inteligentes e pequenos sistemas internos.</p>
+<p class="highlight">Desenvolvimento de páginas em HTML, CSS e JavaScript.</p>
+</div>
+
+</div>
+
+<!-- HABILIDADES -->
+<div class="card">
+<h3>Habilidades Técnicas</h3>
+
+<div class="skill">
+<div class="skill-header"><span>Infraestrutura</span><span>80%</span></div>
+<div class="bar"><div class="bar-fill" data-width="80%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-header"><span>Redes</span><span>75%</span></div>
+<div class="bar"><div class="bar-fill" data-width="75%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-header"><span>Desenvolvimento Web</span><span>85%</span></div>
+<div class="bar"><div class="bar-fill" data-width="85%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-header"><span>Desenvolvimento Desktop</span><span>65%</span></div>
+<div class="bar"><div class="bar-fill" data-width="65%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-header"><span>Manutenção e Suporte</span><span>90%</span></div>
+<div class="bar"><div class="bar-fill" data-width="90%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-header"><span>Sistemas Operacionais</span><span>90%</span></div>
+<div class="bar"><div class="bar-fill" data-width="90%"></div></div>
+</div>
+
+</div>
+
+<!-- CERTIFICADOS -->
+<div class="card">
+<h3>Certificações</h3>
+
+<h4 class="cert-category">Google Digital Marketing & E-commerce</h4>
+<ul class="cert-list">
+
+<li onclick="openPDF('certificados/marketing1.pdf')">
+Attract and Engage Customers with Digital Marketing
+</li>
+
+<li onclick="openPDF('certificados/marketing4.pdf')">
+Foundations of Digital Marketing and E-commerce
+</li>
+
+<li onclick="openPDF('certificados/marketing3.pdf')">
+Assess for Success: Marketing Analytics and Measurement
+</li>
+
+<li onclick="openPDF('certificados/marketing5.pdf')">
+Make the Sale: Build, Launch, and Manage E-commerce Stores
+</li>
+
+<li onclick="openPDF('certificados/marketing6.pdf')">
+Satisfaction Guaranteed: Develop Customer Loyalty Online
+</li>
+
+<li onclick="openPDF('certificados/marketing7.pdf')">
+From Likes to Leads: Interact with Customers Online
+</li>
+
+<li onclick="openPDF('certificados/marketing8.pdf')">
+Think Outside the Inbox: Email Marketing
+</li>
+
+<li onclick="openPDF('certificados/marketing2.pdf')">
+Google Digital Marketing & E-commerce Professional Certificate
+</li>
+
+</ul>
+
+<h4 class="cert-category">Cloud e Tecnologia</h4>
+<ul class="cert-list">
+<li onclick="openPDF('certificados/aws-cloud.pdf')">AWS – Computação em Nuvem</li>
+<li onclick="openPDF('certificados/banco-dados-amazon.pdf')">Banco de Dados – Amazon</li>
+<li onclick="openPDF('certificados/huawei-5g.pdf')">Huawei – Tecnologia 5G</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+<!-- MODAL PDF -->
+<div id="modal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closePDF()">✕</span>
+<iframe id="pdfViewer"></iframe>
+</div>
+</div>
+
+<!-- MODAL QR -->
+<div id="qrModal" class="qr-modal">
+<span onclick="closeQR()">✕</span>
+<img src="qr.png">
+</div>
+
+<script>
+
+function openPDF(file){
+document.getElementById("modal").style.display="flex";
+document.getElementById("pdfViewer").src=file;
+}
+
+function closePDF(){
+document.getElementById("modal").style.display="none";
+document.getElementById("pdfViewer").src="";
+}
+
+function expandQR(){
+document.getElementById("qrModal").style.display="flex";
+}
+
+function closeQR(){
+document.getElementById("qrModal").style.display="none";
+}
+
+function showEmail(){
+document.getElementById("emailBox").classList.toggle("show");
+}
+
+function copyEmail(event){
+const email = document.getElementById("emailText").innerText;
+navigator.clipboard.writeText(email);
+
+const btn = event.target;
+btn.innerText = "Copiado!";
+setTimeout(()=>{
+btn.innerText = "Copiar";
+},1500);
+}
+
+window.addEventListener("DOMContentLoaded", function(){
+const bars=document.querySelectorAll(".bar-fill");
+setTimeout(()=>{
+bars.forEach(bar=>{
+bar.style.width=bar.dataset.width;
+});
+},300);
+});
+
+</script>
+
+</body>
+</html>
