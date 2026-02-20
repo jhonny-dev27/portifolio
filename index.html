@@ -262,8 +262,21 @@ Google Digital Marketing & E-commerce Professional Certificate
 
 <!-- MODAL QR -->
 <div id="qrModal" class="qr-modal">
-<span onclick="closeQR()">✕</span>
-<img src="qr.png">
+<div class="qr-content">
+
+<span class="close-qr" onclick="closeQR()">✕</span>
+
+<img src="qr.png" class="qr-expanded">
+
+<p class="qr-text">Não conseguiu escanear o QR Code?</p>
+
+<a href="https://github.com/john00833?tab=repositories" 
+   target="_blank" 
+   class="qr-direct-link">
+   Acessar site diretamente
+</a>
+
+</div>
 </div>
 
 <script>
@@ -314,6 +327,7 @@ bar.style.width=bar.dataset.width;
 
 </body>
 </html>
+
 
 
 
