@@ -335,7 +335,6 @@ opacity:.8;
 @keyframes fadeIn{
 from{opacity:0; transform:translateY(-5px);}
 to{opacity:1; transform:translateY(0);}
-
 }
 
 /* ===== QR MODAL MELHORADO ===== */
@@ -387,6 +386,7 @@ transition:.3s;
 transform:translateY(-3px);
 box-shadow:0 0 20px rgba(168,85,247,0.6);
 }
+
 /* ===== CERTIFICADOS COM DOWNLOAD ===== */
 
 .cert-item{
@@ -417,4 +417,44 @@ transition:.3s;
 
 .download-icon:hover{
 transform:scale(1.2);
+}
+
+/* Travar rolagem da página */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Container ocupa a tela inteira */
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 40px;
+}
+
+/* Sidebar com rolagem própria */
+.sidebar {
+    height: 100vh;
+    overflow-y: auto;
+    position: relative; /* REMOVE o sticky */
+    top: 0;
+}
+
+/* Main com rolagem própria */
+.main {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar,
+.main::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb,
+.main::-webkit-scrollbar-thumb {
+    background: rgba(168,85,247,0.4);
+    border-radius: 10px;
 }
