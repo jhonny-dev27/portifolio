@@ -419,35 +419,33 @@ transition:.3s;
 transform:scale(1.2);
 }
 
-/* Travar rolagem da página */
+/* ===== DESKTOP - SCROLL INDEPENDENTE ===== */
+@media (min-width:1000px){
+
 html, body {
     height: 100%;
     margin: 0;
     overflow: hidden;
 }
 
-/* Container ocupa a tela inteira */
 .container {
     height: 100vh;
-    display: grid;
-    grid-template-columns: 340px 1fr;
-    gap: 40px;
 }
 
-/* Sidebar com rolagem própria */
+/* Remove sticky apenas no desktop */
 .sidebar {
+    position: relative;
+    top: 0;
     height: 100vh;
     overflow-y: auto;
-    position: relative; /* REMOVE o sticky */
-    top: 0;
 }
 
-/* Main com rolagem própria */
 .main {
     height: 100vh;
     overflow-y: auto;
 }
 
+/* Scroll personalizado */
 .sidebar::-webkit-scrollbar,
 .main::-webkit-scrollbar {
     width: 8px;
@@ -457,4 +455,13 @@ html, body {
 .main::-webkit-scrollbar-thumb {
     background: rgba(168,85,247,0.4);
     border-radius: 10px;
+}
+
+/* Firefox */
+.sidebar,
+.main {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(168,85,247,0.4) transparent;
+}
+
 }
